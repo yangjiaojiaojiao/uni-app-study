@@ -1,0 +1,1 @@
+<view class="good_list"><goods-lists vue-id="576f0adc-1" goods="{{goodsList}}" bind:__l="__l"></goods-lists><block wx:if="{{show}}"><view class="is_over">- 我是没有底线的,但是列表有 -</view></block></view>
