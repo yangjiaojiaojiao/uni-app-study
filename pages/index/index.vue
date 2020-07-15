@@ -50,11 +50,11 @@
 					},{
 						icon: 'iconfont icon-guanyuwomen',
 						title: '联系不到',
-						path: '/pages/goods/goods'
+						path: '/pages/contact/contact'
 					},{
 						icon: 'iconfont icon-tupian',
 						title: '图片图片',
-						path: '/pages/goods/goods'
+						path: '/pages/picture/picture'
 					},{
 						icon: 'iconfont icon-shipin',
 						title: '视频视频',
