@@ -1,6 +1,6 @@
 <template>
 	<view class="good_list">
-		<goods-lists :goods = "goodsList"></goods-lists>
+		<goods-lists  @itemClick="toGoodDetail" :goods = "goodsList"></goods-lists>
 		<view class="is_over" v-if="show">
 			- 我是没有底线的,但是列表有 -
 		</view>
@@ -45,7 +45,13 @@
 				this.goodsList = this.goodsList.concat(res.data.message)
 				uni.stopPullDownRefresh()
 				callback && callback()
+			},
+			toGoodDetail(id){
+				uni.navigateTo({
+					url:'/pages/goods-detail/goods-detail?id='+id
+				})
 			}
+			
 		}
 	}
 </script>

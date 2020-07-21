@@ -45,4 +45,8 @@
 	.icon-ziyuan:before {
 	  content: "\e60d";
 	}
+	.gomeImgLoad{
+		width: 750rpx;
+		height: auto;
+	}
 </style>

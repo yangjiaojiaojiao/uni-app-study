@@ -28,7 +28,7 @@
 		<!-- 推荐商品 -->
 		<view class="hot_goods">
 			<view class="title">推荐商品</view>
-			<goods-lists :goods = "goodsList"></goods-lists>
+			<goods-lists :goods = "goodsList" @itemClick="toGoodDetail"></goods-lists>
 		</view>
 	</view>
 </template>
@@ -86,6 +86,12 @@
 			navsItemClick(path){
 				uni.navigateTo({
 					url: path
+				})
+			},
+			toGoodDetail(id){
+				console.log(id)
+				uni.navigateTo({
+					url:'/pages/goods-detail/goods-detail?id='+id
 				})
 			}
 		}
